@@ -4,8 +4,8 @@ import time
 
 
 def weight_variable(shape):
-    initial = tf.truncated_normal(shape, stddev=0.1)
-    return tf.Variable(initial)
+    initial = tf.truncated_normal(shape, stddev=0.1)        # stddev=0.1 very important, better choice
+    return tf.Variable(initial)                             # is np.random.randn(n) * sqrt(2.0/n)
 
 
 def bias_variable(shape):
