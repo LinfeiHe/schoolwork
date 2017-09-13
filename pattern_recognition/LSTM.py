@@ -209,8 +209,6 @@ if __name__ == '__main__':
         if n % 100 == 0: print 'iter %d, loss: %f' % (n, smooth_loss)  # print progress
 
         # perform parameter update with Adagrad
-        beta1 = 0.9
-        beta2 = 0.999
         eps = 1e-8
 
         loss, grad, ps, hprev, cprev = lstm.loss_func(inputs, labels, hprev, cprev)
