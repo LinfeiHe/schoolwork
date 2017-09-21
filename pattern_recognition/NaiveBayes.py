@@ -17,6 +17,9 @@ x = np.concatenate([[x1], [x2]])
 
 
 class NaiveBayes(object):
+    """
+    class = argmax(k,  p(xi=l|y=k)*p(y=k)/p(xi=l)  )
+    """
     def __init__(self):
         self.plk = {} #store p(xi=l|y=k)
         self.k = [] # store k_class values
@@ -25,7 +28,6 @@ class NaiveBayes(object):
     def train(self, x, y):
         n, m = x.shape # n_features, m_samples
         y_k = collections.Counter(y) # counter k_class in y
-        py = np.zeros(len(y_k)) # py has k elements
         for k in y_k:
             self.k.append(k)
             self.py[k] = y_k[k] / float(len(y))
