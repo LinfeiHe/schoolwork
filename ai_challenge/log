@@ -1,0 +1,22 @@
+7120张图
+batch_size = 4
+num_workers = 4
+
+
+vgg19_bn
+0m 47s
+
+densenet161
+1m 41s
+
+resnet152
+1m 27s
+
+nasnetalarge
+32m 34s
+
+
+5个模型集成，最好的效果94%
+nasnetalarge就有93.9%，应该是集成的方法不大好
+
+
