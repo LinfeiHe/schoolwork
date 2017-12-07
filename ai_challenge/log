@@ -1,8 +1,10 @@
 7120张图
 batch_size = 4
 num_workers = 4
+1个GPU 1080Ti，含cudnn
+pytorch
 
-
+测试时间：
 vgg19_bn
 0m 47s
 
@@ -19,4 +21,7 @@ nasnetalarge
 5个模型集成，最好的效果94%
 nasnetalarge就有93.9%，应该是集成的方法不大好
 
-
+想过的策略（没有实现）
+1. 10crop(即对输入切片，没片的分类结果再集成输出)
+2. 增加数据集，保持训练集不同类别的数量相同。其他数据集有Place365（MIT），OpenImage（Google）
+3. 通过联合推理，对结果进行改进
