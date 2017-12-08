@@ -174,7 +174,7 @@ HIDDEN_SIZE = 100
 cache = 0
 if __name__ == '__main__':
     # data I/O
-    data = open('test2.py', 'r').read()  # should be simple plain text file
+    data = open('tes2.py', 'r').read()  # should be simple plain text file
     chars = list(set(data))
     print chars
     data_size, vocab_size = len(data), len(chars)
