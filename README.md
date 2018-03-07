@@ -45,5 +45,5 @@ Introdution
 
 11. Reinforcement Learning
     written in Matlab and Python2.7
-    Features£ºMDP demon refer to CS229
+    Features£ºMDP demon refer to CS229  
 
